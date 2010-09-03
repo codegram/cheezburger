@@ -7,7 +7,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "cheezburger"
     gem.summary = "BDD for lolcats!"
-    gem.description = "BDD for lolcats!"
+    gem.description = "BDD for lolcats! Just require it in your Gemfile and you got funny specs for free!"
     gem.email = "info@codegram.com"
     gem.homepage = "http://github.com/codegram/cheezburger"
     gem.authors = ["Oriol Gual", "Josep M. Bach", "Josep Jaume Rey"]

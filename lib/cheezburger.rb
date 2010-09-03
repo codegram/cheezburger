@@ -8,7 +8,9 @@ module Kernel
   alias :shoodz_nawt :should_not
 end
 module RSpec
+
   module Core
+
     module Subject
       module ClassMethods
         alias :dey :subject # dey { Object.new }
@@ -16,28 +18,39 @@ module RSpec
       end
       alias :dey :subject # dey.shud_nawt be_nil
     end
+
     module SharedExampleGroup
       alias :fings_dat_maeks :shared_examples_for
     end
+
     module Let
       module ClassMethods
         alias :iz :let
       end
     end
+
     module Pending
       alias :laterz :pending
     end
+
     class ExampleGroup
       module BlockAliases
         alias_method :to_nawt, :to_not
         def twerk
           to_not Matchers::RaiseError.new, "shoodz werk"
-          # RSpec::Expectations::NegativeExpectationHandler.handle_matcher(self, matcher, message, &block)
         end
       end
       alias :thiz :expect
       alias :tihs :expect
       alias :dis :expect
+      alias :i_hoep :expect
+      alias :meh_hoeps :expect
+
+      alias_method :shud, :should
+      alias_method :shoodz, :should
+      alias_method :should_nawt, :should_not
+      alias_method :shud_nawt, :should_not
+      alias_method :shoodz_nawt, :should_not
 
       alias_example_to :I
       alias_example_to :specify
@@ -48,10 +61,18 @@ module RSpec
 
       class << self
         alias_method :discrieb, :describe
+        alias_method :suroundid_bai, :context
       end
       
     end
+
+    module ObjectExtensions
+      alias :discrieb :describe
+      alias :suroundid_bai :context
+    end
+
   end
+
   module Matchers
     alias :haz :have
     alias :haz_at_least :have_at_least
@@ -64,4 +85,15 @@ module RSpec
       end
     end
   end
+
+  module Mocks
+    module Methods
+      alias_method :sez, :stub
+      alias_method :unsez, :unstub
+
+      alias_method :shud_get, :should_receive
+      alias_method :shud_nawt_get, :should_not_receive
+    end
+  end
+
 end
