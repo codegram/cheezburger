@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{cheezburger}
-  s.version = "1.0.0"
+  s.version = "1.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Oriol Gual", "Josep M. Bach", "Josep Jaume Rey"]
-  s.date = %q{2010-09-03}
+  s.date = %q{2010-09-15}
   s.description = %q{BDD for lolcats! Just require it in your Gemfile and you got funny specs for free!}
   s.email = %q{info@codegram.com}
   s.extra_rdoc_files = [
