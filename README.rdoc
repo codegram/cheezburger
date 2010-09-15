@@ -70,4 +70,4 @@ And your RSpec files can now be written by cute kittehs (this are cheezburger's 
 
 == Copyright
 
-Copyright (c) 2010 Josep M. Bach. See LICENSE for details.
+Copyright (c) 2010 Codegram. See LICENSE for details.

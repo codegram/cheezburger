@@ -68,7 +68,7 @@ module RSpec
 
     module ObjectExtensions
       alias :discrieb :describe
-      alias :suroundid_bai :context
+      alias :suroundid_bai :describe
     end
 
   end
