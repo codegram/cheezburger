@@ -77,13 +77,6 @@ module RSpec
     alias :haz :have
     alias :haz_at_least :have_at_least
     alias :haz_at_most :have_at_most
-
-    class Has
-    private
-      def predicate(sym)  
-        "#{sym.to_s.sub("haz_","has_")}?".to_sym
-      end
-    end
   end
 
   module Mocks
